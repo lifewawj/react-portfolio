@@ -10,19 +10,23 @@ const Header = styled.nav`
 const NavLinks = styled.nav`
   display: flex;
   align-items: center;
-  gap: 1rem
+  gap: 1rem;
 `;
 
 const H1 = styled.nav`
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 `;
 
 const A = styled.a`
-    color: white;
-    text-decoration: none;
-`
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: #C4C4C4;
+  }
+`;
 
 function NavBar() {
   return (
