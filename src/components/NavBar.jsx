@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import colors from "./colors";
 
 const Header = styled.nav`
   display: flex;
   justify-content: space-around;
   padding: 25px;
-  background-color: #252526;
+  background-color: ${colors.background}
 `;
 
 const NavLinks = styled.nav`
@@ -14,17 +15,17 @@ const NavLinks = styled.nav`
 `;
 
 const H1 = styled.nav`
-  color: white;
+  color: ${colors.textColor};
   font-size: 2rem;
   cursor: pointer;
 `;
 
 const A = styled.a`
-  color: white;
+  color: ${colors.textColor};
   text-decoration: none;
 
   &:hover {
-    color: #C4C4C4;
+    color: ${colors.hoverTextColor};
   }
 `;
 
