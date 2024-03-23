@@ -1,24 +1,40 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const Nav = styled.nav`
+const Header = styled.nav`
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  background-color: #252526;
+`;
 
+const NavLinks = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: 1rem
+`;
+
+const H1 = styled.nav`
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+`;
+
+const A = styled.a`
+    color: white;
+    text-decoration: none;
 `
 
 function NavBar() {
   return (
-    <nav>
-      <div>
-        <h1>lifewawj</h1>
-      </div>
-      <div>
-        <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Resume</li>
-        </ul>
-      </div>
-    </nav>
+    <Header>
+      <H1>lifewawj</H1>
+      <NavLinks>
+        <A href="">About</A>
+        <A href="">Portfolio</A>
+        <A href="">Contact</A>
+        <A href="">Resume</A>
+      </NavLinks>
+    </Header>
   );
 }
 

@@ -7,9 +7,6 @@ function App() {
       <div>
         <NavBar></NavBar>
       </div>
-      <div>
-        
-      </div>
     </>
   );
 }
