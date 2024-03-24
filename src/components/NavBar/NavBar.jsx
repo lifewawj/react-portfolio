@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import colors from "./colors";
+import colors from "../colors";
 
 const Header = styled.nav`
   display: flex;
   justify-content: space-around;
   padding: 25px;
-  background-color: ${colors.background}
+  background-color: ${colors.background};
+  width: auto;
 `;
 
 const NavLinks = styled.nav`
