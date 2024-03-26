@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import colors from "../colors";
 
-function Portfolio() {
+function Project() {
     return(
         <div>
-            <h2>Portfolio</h2>
+            <img></img>
         </div>
-    )
+    );
 }
 
-export default Portfolio;
+export default Project;
