@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import colors from "../colors";
 
+//TODO: 
 function Resume() {
     return(
         <div>

@@ -6,14 +6,14 @@ const H2 = styled.h2`
 `
 
 const P = styled.div`
-    margin-top: 25px;
     font-size: 1rem;
 `
-
+// TODO: Add an IMG to About Component and styles
 function About() {
     return(
         <div>
             <H2>About Me</H2>
+            <img></img>
             <P>A UCSD Bootcamp Student</P>
         </div>
     )
