@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import colors from "../colors";
+import Navigation from "../Navigation/Navigation";
 
-const Header = styled.nav`
+const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 25px;
@@ -15,33 +16,21 @@ const NavLinks = styled.nav`
   gap: 1rem;
 `;
 
-const H1 = styled.nav`
+const H1 = styled.h1`
   color: ${colors.textColor};
   font-size: 2rem;
   cursor: pointer;
 `;
 
-const A = styled.a`
-  color: ${colors.textColor};
-  text-decoration: none;
-
-  &:hover {
-    color: ${colors.hoverTextColor};
-  }
-`;
-
-function NavBar() {
+function Header() {
   return (
-    <Header>
+    <Wrapper>
       <H1>lifewawj</H1>
       <NavLinks>
-        <A href="">About</A>
-        <A href="">Portfolio</A>
-        <A href="">Contact</A>
-        <A href="">Resume</A>
+        <Navigation></Navigation>
       </NavLinks>
-    </Header>
+    </Wrapper>
   );
 }
 
-export default NavBar;
+export default Header;

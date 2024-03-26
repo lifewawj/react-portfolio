@@ -1,33 +1,26 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import colors from "../colors";
 
-const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 100px;
-`;
+const Wrapper = styled.div`
+    margin: 25px;
+`
 
-const H2 = styled.h2`
-  /* Add your styles for the header here */
-  text-align: left;
-  font-size: 24px;
-  color: #333;
-  text-decoration: underline;
-`;
+const H1 = styled.div`
+    font-size: 2rem;
+`
 
-const P = styled.p`
-  /* Add your styles for the paragraph here */
-  text-align: left;
-  font-size: 16px;
-  color: #666;
-`;
+const P = styled.div`
+    margin-top: 25px;
+    font-size: 1rem;
+`
 
 function About() {
-  return (
-    <Div>
-      <H2>ABOUT ME</H2>
-      <P>A UCSD Bootcamp Student!</P>
-    </Div>
-  );
+    return(
+        <Wrapper>
+            <H1>About Me</H1>
+            <P>A UCSD Bootcamp Student</P>
+        </Wrapper>
+    )
 }
 
 export default About;
