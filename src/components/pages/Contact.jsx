@@ -22,6 +22,12 @@ const Input = styled.input`
 const Button = styled.button`
     margin-top: 15px;
     padding: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
 `
 function Contact() {
     return(
