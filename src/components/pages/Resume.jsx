@@ -1,23 +1,37 @@
 import styled from "styled-components";
 import colors from "../colors";
 
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+const H3 = styled.h3`
+    margin-top: 25px;
+`
+
+const Ul = styled.ul`
+    margin-left: 25px;
+    margin-top: 10px;
+`
+
 //TODO: 
 function Resume() {
     return(
-        <div>
+        <Wrapper>
             <h2>Resume</h2>
-            <h3>Frontend Skills</h3>
-            <ul>
+            <H3>Frontend Skills</H3>
+            <Ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-            </ul>
-            <h3>Backend Skills</h3>
-            <ul>
+            </Ul>
+            <H3>Backend Skills</H3>
+            <Ul>
                 <li>APIs</li>
                 <li>Express</li>
-            </ul>
-        </div>
+            </Ul>
+        </Wrapper>
     );
 }
 
