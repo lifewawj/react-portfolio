@@ -9,6 +9,7 @@ const Button = styled.button`
   borner-radius: 50px;
   padding: 0;
   cursor: pointer;
+  font-size: 1rem;
 
   &:hover {
     color: ${colors.hoverTextColor};

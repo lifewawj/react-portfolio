@@ -4,7 +4,6 @@ import Navigation from "../Navigation/Navigation";
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
   padding: 25px;
   background-color: ${colors.background};
   width: auto;
@@ -13,7 +12,8 @@ const Wrapper = styled.div`
 const NavLinks = styled.nav`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  margin-left: auto;
 `;
 
 const H1 = styled.h1`
