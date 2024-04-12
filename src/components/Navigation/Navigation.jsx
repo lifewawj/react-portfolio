@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import colors from "../colors";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { useState } from "react";
 
 const Button = styled.button`
   color: ${colors.textColor};

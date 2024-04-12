@@ -15,6 +15,13 @@ const Ul = styled.ul`
     margin-top: 10px;
 `
 
+const DownloadContainer = styled.ul`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+`
+
 //TODO: A downloadable link to download my resume
 function Resume() {
     return(
@@ -31,6 +38,12 @@ function Resume() {
                 <li>APIs</li>
                 <li>Express</li>
             </Ul>
+            <DownloadContainer>
+                <p>Click the Icon to Download my Resume</p>
+                <a href="/src/assets/example-resume.pdf">
+                    <img src="/src/assets/download-icon.png"/>
+                </a>
+            </DownloadContainer>
         </Wrapper>
     );
 }

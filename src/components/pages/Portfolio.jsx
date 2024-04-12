@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import colors from "../colors";
-import Project from "../Project/project"
+import Projects from "../Projects/projects"
 
 const H2 = styled.h2`
   margin-bottom: 25px;
@@ -11,7 +11,7 @@ function Portfolio() {
   return (
     <div>
       <H2>Portfolio</H2>
-      <Project></Project>
+      <Projects></Projects>
     </div>
   );
 }
