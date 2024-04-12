@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import colors from "../colors";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Button = styled.button`
   color: ${colors.textColor};
   background-color: transparent;
   border: none;
-  borner-radius: 50px;
+  border-radius: 50px;
   padding: 0;
   cursor: pointer;
   font-size: 1rem;
@@ -16,26 +16,28 @@ const Button = styled.button`
   }
 `;
 
+
 function Navigation() {
   return (
     <>
-      <Link to="/">
+      <NavLink to="/">
         <Button>About</Button>
-      </Link>
+      </NavLink>
 
-      <Link to="/portfolio">
+      <NavLink to="/portfolio">
         <Button>Portfolio</Button>
-      </Link>
+      </NavLink>
 
-      <Link to="/contact">
+      <NavLink to="/contact">
         <Button>Contact</Button>
-      </Link>
+      </NavLink>
 
-      <Link to="/resume">
+      <NavLink to="/resume">
         <Button>Resume</Button>
-      </Link>
+      </NavLink>
     </>
   );
 }
+
 
 export default Navigation;

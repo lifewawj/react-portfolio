@@ -2,8 +2,8 @@ import styled from "styled-components";
 import colors from "../colors";
 
 const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Button = styled.button`
@@ -11,39 +11,27 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Span = styled.span`
-    font-size: 4rem;
-`;
-
 const BtnContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-`
+  display: flex;
+  flex-direction: row;
+`;
 
 function Project() {
   return (
-    <Wrapper>
+    <div>
       <h3>Note-Taker</h3>
-      <Span>🗒️✍️</Span>
+
       <BtnContainer>
-      <Button
-        onClick={() =>
-          (window.location.href =
-            "https://github.com/lifewawj/note-taker?tab=readme-ov-file")
-        }
-      >
-        GitHub
-      </Button>
-      <Button
-        onClick={() =>
-          (window.location.href =
-            "https://ucsd-ajs-note-taker-6c105c85e30a.herokuapp.com/")
-        }
-      >
-        Deployed App
-      </Button>
+        <Button
+          onClick={() =>
+            (window.location.href =
+              "https://github.com/lifewawj/my-portfolio")
+          }
+        >
+          GitHub
+        </Button>
       </BtnContainer>
-    </Wrapper>
+    </div>
   );
 }
 

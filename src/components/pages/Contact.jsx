@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import colors from "../colors";
 
-// TODO: Add styles to Contact component
+// TODO: 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;

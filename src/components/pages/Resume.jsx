@@ -15,7 +15,7 @@ const Ul = styled.ul`
     margin-top: 10px;
 `
 
-//TODO: 
+//TODO: A downloadable link to download my resume
 function Resume() {
     return(
         <Wrapper>
