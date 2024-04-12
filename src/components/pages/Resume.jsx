@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import colors from "../colors";
+import DownloadIcon from "../../assets/download-icon.png";
 
 const Wrapper = styled.div`
     display: flex;
@@ -41,7 +42,7 @@ function Resume() {
             <DownloadContainer>
                 <p>Click the Icon to Download my Resume</p>
                 <a href="/src/assets/example-resume.pdf">
-                    <img src="/src/assets/download-icon.png"/>
+                    <img src={DownloadIcon}/>
                 </a>
             </DownloadContainer>
         </Wrapper>

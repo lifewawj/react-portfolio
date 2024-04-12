@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import colors from "../colors";
 
+import UserImage from "../../assets/placeholder-user-img.svg";
+
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -20,10 +22,7 @@ function About() {
     return(
         <Wrapper>
             <H2>About Me</H2>
-            <img
-            src="/src/assets/placeholder-user-img.svg"
-            />
-            <img></img>
+            <img src={UserImage}></img>
             <P>A Filipino-American that was born and raised in Kodiak, Alaska for most of his life. Until After High-school graduation, he than moved California to explore the new opportunities the world has to offer.</P>
         </Wrapper>
     )

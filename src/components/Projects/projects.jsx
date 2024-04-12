@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import colors from "../colors";
+import ProjectImage from "../../assets/placeholder-project-img.svg"
 
 const Wrapper = styled.div`
 
@@ -14,7 +15,7 @@ function Projects() {
     <Wrapper>
       <H3>Project 1</H3>
       <a href="">
-      <img src="/src/assets/placeholder-project-img.svg" alt="500x500" />
+      <img src={ProjectImage} alt="500x500" />
       </a>
     </Wrapper>
   );
